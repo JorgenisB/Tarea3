@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Multicapas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer="true"></script>
+</head>
+<body onload="cargarContactos()">
+    <div class="container">
+        <div class="contact-form">
+            <h1>Agregar Nuevo Contacto</h1>
+            <form id="add-contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+                <button type="submit">Agregar Contacto</button>
+            </form>
+        </div>
+        <div class="contact-list">
+            <h1>Lista de Contactos</h1>
+            <div class="contact-list-container">
+                <ul id="contact-list"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
